@@ -1,0 +1,26 @@
+ 
+
+```{r c1}
+library(readr)
+df <- read_csv("C:/Users/NOUKON Gilberto/Desktop/projet_python/Housing.csv")
+head(df)
+```
+
+
+```{r c2}
+# Créer un histogramme de la feature 'bedrooms'
+hist(df$bedrooms, main="Histogramme des chambres", xlab="Nombre de chambres", ylab="Fréquence", col="blue", border="black")
+
+```
+
+
+```{r c3}
+
+# Créer un scatter plot
+plot(df$area, df$price, main="Scatter Plot de Area vs Price", xlab="Area", ylab="Price", pch=19, col="blue")
+
+
+```
+
+
+
